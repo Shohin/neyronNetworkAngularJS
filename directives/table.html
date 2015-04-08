@@ -1,0 +1,8 @@
+<table align="center">
+    <th ng-repeat="xs in data.x[0] track by $index">{{data.xTitle + $index}}</th>
+    <th>{{data.yTitle}}</th>
+    <tr ng-repeat="nums in data.x track by $index">
+      <td ng-repeat="num in nums track by $index">{{num}}</td>
+      <td ng-show="data.y.length > 0">{{data.y[$index]}}</td>
+    </tr>
+</table>
